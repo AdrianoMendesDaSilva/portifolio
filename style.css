@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap");
+
+:root {
+  --lightGreen: rgb(121, 156, 65);
+  --darkBlue: #0b141e;
+  --blue: #399af5;
+  --white: #eff1f5;
+  --grey: #171e27;
+}
+
+body {
+  background-color: var(--grey);
+  font-family: "Poppins", sans-serif;
+}
+.card {
+  box-shadow: 0px 0px 3px 1px var(--white);
+  max-width: 430px;
+  height: 750px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 24px;
+  padding: 40px 50px;
+  position: relative;
+}
+.profile__picture {
+  background-image: url("img/LOGO.jpg");
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 2px 2px var(--lightGreen);
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile__name {
+  color: var(--white);
+  text-shadow: 1px 1px 1px #333;
+  margin-left: 50%;
+  transform: translateX(-35%);
+}
+
+.profile__job {
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 200;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.profile__links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+}
+
+.profile__links > li {
+  list-style: none;
+}
+
+i {
+  color: var(--blue);
+  filter: drop-shadow(0px 0px 3px var(--blue));
+  transition: all ease 0.5s;
+}
+i:hover {
+  color: var(--white);
+}
